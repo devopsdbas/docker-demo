@@ -22,6 +22,6 @@ jobs:
     - name: Docker Build
       run: docker build -t alpine .
     - name: Docker Tag
-      run: docker tag alphine raamu8/alphine
+      run: docker tag github-actions-demo raamu8/alphine
     - name: Docker Push
       run: docker push raamu8/alphine
