@@ -20,7 +20,7 @@ jobs:
        username: ${{secrets.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
     - name: Docker Build
-      run: docker build -t alpine .
+      run: docker build -t github-actions-demo .
     - name: Docker Tag
       run: docker tag github-actions-demo raamu8/alphine
     - name: Docker Push
